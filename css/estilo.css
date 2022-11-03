@@ -82,5 +82,32 @@ body * {
   line-height: 125%;
 
   color: #E1E1E6;
+}
 
+.card ul li img:hover,
+.card ul li strong:hover,
+.card h2:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(black 1px 5px 10px);
+}
+
+.card ul li img,
+.card ul li strong,
+.card h2 {
+  transition: transform 0.3s;
+}
+
+.card{
+  opacity: 0;
+  animation: appear .2s forwards;
+}
+
+
+@keyframes appear {
+  0%{
+    transform: translateY(-100px);
+  }
+  100%{
+    opacity: 1;
+  }
 }
