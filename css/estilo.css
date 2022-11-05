@@ -128,7 +128,6 @@ body * {
   animation: appear .2s forwards;
 }
 
-
 @keyframes appear {
   0%{
     transform: translateY(-100px);
@@ -145,5 +144,3 @@ body * {
     flex-wrap: wrap;
   }
 }
-
-
